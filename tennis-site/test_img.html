@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Теннис — фотокарточки</title>
+  <style>
+   figure {
+    background: #5f6a72; /* Цвет фона */
+    padding: 5px; /* Поля вокруг */
+    display: block; /* Блочный элемент */
+    width: 500px; /* Ширина */
+    float: left;
+    margin: 0 10px 10px 0;
+    text-align: center;
+   }
+   figcaption {
+    color: #ffffff;
+   }
+  </style>
+   <style>
+          a:hover {
+            background-color: #e3f1b0;
+        }
+
+        a.active {
+         background-color: #b9d969;
+}
+    </style>
+ </head>
+   <h1><a href="index.html"><img src="image/f1.png" width="120" alt="На главную"></a> Tennis Club </h1>
+<ul>
+    <li> <a href='index.html'>  Главная страница </a> </li>
+    <li> <a href='info.html'>  Информационная страница с главами </a> </li> <li> <a href="info.html#teams">Игроки и чемпионы</a> </li>
+    <li> <a href='test_img.html' class="active"> Фото </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href='passport.html'>Паспорт </a> </li>
+    <li> <a href='table.html' >Таблица </a> </li>
+    <li> <a href='task.html'>Задача </a> </li>
+    <li> <a href='DOM.html'>Считывание из DOM</a> </li>
+    <li> <a href="https://www.itftennis.com/" target="_blank"> Международная федерация тенниса </a> </li>
+
+</ul>
+ <body>
+  <article>
+   <figure>
+    <p><img src="image/racket.jpg" width="300" height="200" alt="Теннисная ракетка" /></p>
+    <figcaption>теннисная ракетка</figcaption>
+   </figure>
+   <figure>
+    <p><img src="image/track.jpg" width="300" height="200" alt="Теннисный корт" /></p>
+    <figcaption>теннисный корт</figcaption>
+   </figure>
+   <figure>
+    <p><img src="image/car.jpg" width="300" height="200" alt="Теннисные мячи" /></p>
+    <figcaption>теннисный матч</figcaption>
+   </figure>
+   <figure>
+    <p><img src="image/track.jpg" width="300" height="200" alt="Схема корта" /></p>
+    <figcaption>схема теннисного корта</figcaption>
+   </figure>
+   <figure>
+    <p><a href="big_img.html" target="_blank"><img src="image/track.jpg" width="100" height="67" alt="" /></a></p>
+    <figcaption>фото-ссылка</figcaption>
+   </figure>
+  </article>
+ </body>
+</html>

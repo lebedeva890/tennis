@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+          a:hover {
+            background-color: yellow;
+        }
+
+        a.active {
+         background-color: red;
+}
+    </style>
+</head>
+<body>
+
+
+<h1><a href="index.html"><img src="image/f1.png" width="120" alt="На главную"></a> Tennis Club </h1>
+<ul>
+    <li> <a href='index.html'>  Главная страница </a> </li>
+    <li> <a href='info.html'>  Информационная страница с главами </a> </li> <li> <a href="info.html#teams">Игроки и чемпионы</a> </li>
+    <li> <a href='test_img.html'> Фото </a> </li>
+    <li> <a href="form.html" class="active"> Форма </a> </li>
+    <li> <a href='passport.html'>Паспорт </a> </li>
+    <li> <a href='table.html'>Таблица </a> </li>
+    <li> <a href='task.html'>Задача </a> </li>
+    <li> <a href='DOM.html'>Считывание из DOM</a> </li>
+    <li> <a href="https://www.itftennis.com/" target="_blank"> Международная федерация тенниса </a> </li>
+
+</ul>
+<h1>Форма 1: регистрация любителя тенниса</h1>
+<form action="https://www.google.com" id="UserEnter1" name="UserEnter1" target="_blank">
+
+    <p> Фамилия <input type="text" name="surname"></p>
+    <p> Имя <input type="text" name="name"></p>
+    <p> Группа <input type="text" name="group"></p>
+    <p> Мобильный телефон <input type="tel" name="phone" placeholder="+7 900 000-00-00"></p>
+    <p> Электронная почта <input type="email" name="email"></p>
+    <p> Дата отправки <input type="date" name="send_date" id="send_date" value="2026-10-14"></p>
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+</form>
+<script>
+    document.getElementById("send_date").valueAsDate = new Date();
+</script>
+
+<h1>Форма 2: анкета болельщика тенниса</h1>
+<form action="https://www.google.com" id="UserEnter2" name="UserEnter2" target="_blank">
+
+    <p> Ваше имя <input type="text" name="fan_name" value="Болельщик"></p>
+    <p><b>За какую команду вы болеете:</b><br>
+   <input type="radio" name="favorite_team" value="ferrari" checked> Ferrari<br>
+   <input type="radio" name="favorite_team" value="mclaren"> McLaren<br>
+   <input type="radio" name="favorite_team" value="redbull"> Red Bull<br>
+   <input type="radio" name="favorite_team" value="mercedes"> Mercedes<br>
+  </p>
+  <p>Ваш любимый гонщик и почему<br>
+   <textarea name="favorite_driver" cols="40" rows="3">Льюис Хэмилтон — семикратный чемпион мира</textarea></p>
+
+    <p>Дата первого матча, который вы посмотрели: <input type="date" name="first_race_date" value="2021-12-12"></p>
+    <p>Насколько вы любите теннис: <input type="range" name="fan_level" min="0" max="100" value="50"></p>
+    <p>Пароль для анкеты: <input type="password" name="password" size="9" value="f1fan"></p>
+    <p>Смотрите ли вы матчи в прямом эфире <input type="checkbox" name="watch_live" value="yes" checked></p>
+    <p>Сколько гонок вы посмотрели в этом сезоне <input type="number" name="races_watched" min="0" max="30" value="5"></p>
+    <input type="hidden" name="form_type" value="f1_fan_survey">
+
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+</form>
+</body>
+
+</html>

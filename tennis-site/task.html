@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+          a:hover {
+            background-color: yellow;
+        }
+
+        a.active {
+         background-color: red;
+}
+    </style>
+</head>
+<body>
+
+<h1><a href="index.html"><img src="image/f1.png" width="120" alt="На главную"></a> Tennis Club </h1>
+<ul>
+    <li> <a href='index.html'>  Главная страница </a> </li>
+    <li> <a href='info.html'>  Информационная страница с главами </a> </li> <li> <a href="info.html#teams">Игроки и чемпионы</a> </li>
+    <li> <a href='test_img.html'> Фото </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href='passport.html'>Паспорт </a> </li>
+    <li> <a href='table.html'>Таблица </a> </li>
+    <li> <a href='task.html'  class="active">Задача </a> </li>
+    <li> <a href='DOM.html'>Считывание из DOM</a> </li>
+    <li> <a href="https://www.itftennis.com/" target="_blank"> Международная федерация тенниса </a> </li>
+
+
+</ul>
+    <h2>Задача № 1017</h2>
+    <p>Дано вещественное число A. Вычислить x = a<sup>4</sup> при a &lt; 10;
+    x = a при a &gt; 61; в противном случае x = a − sin(a<sup>2</sup>).</p>
+    <form action="https://www.google.com" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>Формулировка задачи<br>
+                <textarea cols="60" rows="4" id="task" name="formulation" readonly>Задача 1017. Дано вещественное число A. Вычислить x = a**4, при a < 10; x = a при a > 61; в противном случае x = a − sin(a**2).</textarea></li>
+            <li>A: <input id="A" name="A" type="number" step="any" value="12"></li>
+            <li>Результат решения задачи (x): <input id="result" name="result" size="40" value="не определён" readonly></li>
+            <li>действие 1: <input id="verify" type="button" value="Вычислить"></li>
+            <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+    
+<script src="./scripts/task.js"></script>
+
+</body></html>

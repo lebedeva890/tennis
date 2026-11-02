@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Теннис — таблица</title>
+    <style>
+        a:hover {
+            background-color: yellow;
+        }
+
+        a.active {
+            background-color: red;
+        }
+
+
+        table {
+            background-image: none;
+            background-size: cover;
+            background-position: center;
+            table-layout: fixed;
+            border-collapse: separate;
+        }
+        td { overflow-wrap: break-word; vertical-align: middle; }
+        td img { max-width: 100%; object-fit: cover; }
+        table table { background: #ffffff; table-layout: fixed; }
+    </style>
+</head>
+<body>
+
+<h1><a href="index.html"><img src="image/f1.png" width="120" alt="На главную"></a> Tennis Club </h1>
+<ul>
+    <li> <a href='index.html'>  Главная страница </a> </li>
+    <li> <a href='info.html'>  Информационная страница с главами </a> </li> <li> <a href="info.html#teams">Игроки и чемпионы</a> </li>
+    <li> <a href='test_img.html'> Фото </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href='passport.html'>Паспорт </a> </li>
+    <li> <a href='table.html'  class="active">Таблица </a> </li>
+    <li> <a href='task.html'>Задача </a> </li>
+    <li> <a href='DOM.html'>Считывание из DOM</a> </li>
+    <li> <a href="https://www.itftennis.com/" target="_blank"> Международная федерация тенниса </a> </li>
+
+</ul>
+
+<h2 align="center">Теннис в таблице</h2>
+
+<table width="760" align="center" bgcolor="#e8f1e8"
+       border="2" cellspacing="6" cellpadding="12">
+
+    <tr height="100">
+        <!-- Три одинаковые колонки -->
+        <td width="33%" align="center" valign="middle">
+            <img src="image/racket.jpg" width="160" height="105" alt="Теннисная ракетка"><br>
+            <font size="2">Теннисная ракетка</font>
+        </td>
+
+        <td width="34%" align="center">Теннис</td>
+
+        <td width="33%" align="center" bgcolor="#cfe7ce">
+            <b><font color="red" size="5">МАТЧ</font></b>
+        </td>
+    </tr>
+
+    <tr height="20">
+        <td colspan="3" align="center">Турниры Большого шлема: Australian Open, Roland-Garros, Wimbledon, US Open</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" height="130">Теннис играют на траве, грунте и харде. Матч состоит из сетов, а сет — из геймов.</td>
+        <td bgcolor="#b8d9b8" align="center">Травяной корт — покрытие Уимблдона</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" height="200">
+            <table border="1" width="100%" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td><a href="https://www.itftennis.com/" target="_blank"><img src="image/track.jpg" alt="Теннисный корт" width="90" height="90"></a></td>
+                    <td>Australian Open — хард</td>
+                </tr>
+                <tr>
+                    <td>Roland-Garros — грунт</td>
+                    <td>Wimbledon — трава</td>
+                </tr>
+            </table>
+        </td>
+
+        <td align="center" valign="middle">
+            <img src="image/car.jpg" alt="Теннисный матч" width="190" height="140" >
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
