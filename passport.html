@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+          a:hover {
+            background-color: yellow;
+        }
+
+        a.active {
+         background-color: #red;
+}
+    </style>
+   <title>Изменяем кириллицу на латиницу по клику</title>
+      <style type="text/css">
+          body{
+              background-image: url(image/pass.jfif);
+            background-position: left 265px;
+            background-repeat: no-repeat;
+          }
+          .fam{
+            margin-left: 150px;
+            margin-top: 293px;
+          }
+          .imya{
+            margin-left: 140px;
+            margin-top: 22px;
+          }
+          .otc{
+            margin-left: 150px;
+            margin-top: 3px;
+          }
+          .date{
+            margin-left: 135px;
+            margin-top: 2px;
+          }
+          .img{
+            margin-left: 10px;
+            margin-top: -70px;
+          }
+          .date_vid{
+            margin-left: 65px;
+            margin-top: -324px;
+          }
+          .vid{
+            margin-left: 90px;
+            margin-top: -77px;
+          }
+          .place{
+            margin-left: 160px;
+            margin-top: 323px;
+          }
+          .button{
+            margin-left: 10px;
+            margin-top: 120px;
+          }
+          body.zagran{
+            background-image: url(image/zagran.jpg);
+          }
+          body.zagran .fam, body.zagran .imya, body.zagran .otc,
+          body.zagran .date, body.zagran .img, body.zagran .date_vid,
+          body.zagran .vid, body.zagran .place, body.zagran .button{
+            position: absolute;
+            margin: 0;
+            font-size: 14px;
+          }
+          body.zagran .fam      { top: 627px; left: 150px; }
+          body.zagran .imya     { top: 657px; left: 150px; }
+          body.zagran .otc      { top: 657px; left: 215px; }
+          body.zagran .place    { top: 711px; left: 268px; }
+          body.zagran .date     { top: 733px; left: 150px; }
+          body.zagran .date_vid { top: 754px; left: 150px; }
+          body.zagran .vid      { top: 777px; left: 150px; }
+          body.zagran .img      { top: 610px; left: 20px;  }
+          body.zagran .button   { top: 810px; left: 10px;  }
+      </style>
+  </head>
+  <body>
+<h1><a href="index.html"><img src="image/f1.png" width="120" alt="На главную"></a> Tennis Club </h1>
+<ul>
+    <li> <a href='index.html'>  Главная страница </a> </li>
+    <li> <a href='info.html'>  Информационная страница с главами </a> </li> <li> <a href="info.html#teams">Игроки и чемпионы</a> </li>
+    <li> <a href='test_img.html'> Фото </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href='passport.html' class="active">Паспорт </a> </li>
+    <li> <a href='table.html' >Таблица </a> </li>
+    <li> <a href='task.html'>Задача </a> </li>
+    <li> <a href='DOM.html'>Считывание из DOM</a> </li>
+    <li> <a href="https://www.itftennis.com/" target="_blank"> Международная федерация тенниса </a> </li>
+
+</ul>
+
+
+<div class="fam">Петров</div>
+<div class="imya">Виталий</div>
+<div class="otc">Александрович</div>
+<div class="date"> Муж &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15.05.2001 </div>
+<div class="img"> <img src="image/vitalya.jpg" height="110" width="100"> </div>
+<div class="date_vid"> 20.05.2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;230-012 </div>
+<div class="vid"> ГУ МВД ПО Г.СОЧИ </div>
+<div class="place"> Г.СОЧИ </div>
+<button class="button" id="change"> Заменить </button>
+
+</body>
+<script src = "./scripts/pass.js"> </script>
+</html>
